@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            background-color: black;
+            color:white;
+        }
+        .nav{
+            background-color: #7c3541;
+            padding:1px 20px;
+            width:1308px;
+        }
+        .nav ul{
+            display:flex;
+        }
+        .nav ul li{
+            list-style:none;
+        }
+        .nav ul li a{
+            text-decoration:none;
+            padding:10px 15px;
+            color:white;
+        }
+        .nav ul li a:hover{
+            background-color: white;
+            color:black;
+            text-decoration: underline;
+            border-radius: 12px;
+        }
+        .Home{
+            margin:150px 200px;
+            text-align: center;
+            border:2px solid black;
+            padding:20px;
+            background-color: #94404f1a;
+            width:900px
+        }
+        .bottom{
+            border-top:1px solid  #bbb1b1;
+            height: 100px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cccc599e;
+            width:1349px;
+        }
+        @media()
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="toggleHide()">Services</a></li>
+            <li><a href="#" onclick="toggleHide()">About</a></li>
+            <li><a href="#" onclick="toggleHide()">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="Home">
+        <h2>Welcome To My Website</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime autem rerum odit omnis ratione laborum blanditiis iste temporibus, repellat obcaecati ex minima in ad deleniti velit optio quisquam voluptatem tenetur incidunt delectus distinctio hic ullam. Porro, recusandae sint voluptatibus voluptas perferendis quod nisi sit maxime! Similique quae, veritatis animi quibusdam perferendis omnis esse excepturi recusandae.
+    </div>
+    <div class="bottom">
+        <span id="time">
+
+        </span>
+    </div>
+
+    <script>
+        function display_time(){
+            time.innerHTML=Date()
+        }
+        setInterval(display_time,1000)
+        function toggleHide(){
+            alert("Sorry but page is not available😔")
+        }
+    </script>
+</body>
+</html>
